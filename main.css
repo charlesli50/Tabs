@@ -38,6 +38,6 @@
 	max-width:100%;
 	height:auto;
 }
-#text.error, #date.error{
+#text.error, #date.error, #email.error, #password.error	{
 	border-color:#FF0000;
 }

@@ -51,20 +51,22 @@
 		<!-- 2nd page of content -->
 
 		<div id = "content2">
-			<form class = "m-3">
+			<form class = "m-3" id = "form2" onsubmit="isValid2()">
 				<div class="form-group">
-					<label for = "username">Username</label>
-					<input type="text" class = "form-control" name="username" placeholder="Username">
+					<label for = "email">Email</label>
+					<input type="email" id = "email" class = "form-control" name="email" placeholder="Email" required>
 				</div>
 				<div class="form-group">
 					<label for = "Password">Password</label>
-					<input type="password" class = "form-control" name="password" placeholder = "Password">
+					<input type="password" id = "password" class = "form-control" name="password" placeholder = "Password" required>
 				</div>
 
 				<button class = "btn btn-success w-100 btn-lg" type = "submit">Submit</button>
 			</form>
 		</div>
 	</div>
+	<!-- where the info goes -->
+	<div id = "info"></div>
  
 </div>
 
