@@ -1,0 +1,43 @@
+#content2 {
+	display: none;
+}
+
+
+#tab1{
+	border-right: 1px black solid;
+}
+
+.tab{
+	padding:1%;
+}
+
+#part{
+	background-color: #ddd;
+	margin:auto;
+	text-align: center;
+	border-bottom:1px black solid;
+}
+
+.part1{
+	background-color: #ccc;
+	margin:0px;
+	color: #4287f5;
+}
+.part2{
+	margin:0px;
+	padding-bottom: 2px;
+}	
+
+#head-text{
+	display: inline;
+	text-align:center;
+	vertical-align: middle;
+}
+#logo{
+	width:10%;
+	max-width:100%;
+	height:auto;
+}
+#text.error, #date.error{
+	border-color:#FF0000;
+}

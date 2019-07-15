@@ -1,0 +1,80 @@
+<!-- two tabs, made with jquery and bootstrap -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tabs </title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+	<script type="text/javascript" src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<!-- the top header -->
+
+	<div id = "header" class = "text-center m-3">
+		<img src="newton_logo.png" alt = "newton logo" id = "logo">
+		<h1 id = "head-text" class= "display-4 rounded ">Header placeholder</h1>
+	</div>
+
+
+	<!-- the tab contents -->
+	<div id = "content" class = "border border-dark">
+
+		<div class = "row" id = "part">
+			<h1 class = "part1 col-6">Part 1</h1>
+			<h1 class = "part2 col-6">Part 2</h1>
+		</div>
+
+		<div id = "content1">
+			<form class = "m-3" id = "form1" onsubmit="isValid()">
+				<div class="form-group">
+					<label for = "text">Text</label>
+					<input type="text" class = "form-control" name="text" placeholder="Text" id = "text" required>
+				</div>
+				<div class="form-group">
+					<label for = "date">Date</label>
+					<input type="date" class = "form-control" name="date" id = "date" required>
+				</div>
+
+				<button class = "btn btn-success w-100 btn-lg" type = "submit">Go To Page Two</button>
+			</form>
+		</div>
+
+		<!-- 2nd page of content -->
+
+		<div id = "content2">
+			<form class = "m-3">
+				<div class="form-group">
+					<label for = "username">Username</label>
+					<input type="text" class = "form-control" name="username" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for = "Password">Password</label>
+					<input type="password" class = "form-control" name="password" placeholder = "Password">
+				</div>
+
+				<button class = "btn btn-success w-100 btn-lg" type = "submit">Submit</button>
+			</form>
+		</div>
+	</div>
+ 
+</div>
+
+
+<script type="text/javascript" src = "main.js"></script>
+<script type="text/javascript">
+
+</script>
+
+
+
+</body>
+</html>
