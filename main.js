@@ -18,7 +18,7 @@ form1.validate();
 function isValid(){
 	if (form1.valid() === true){
 		part2()
-		display(form1)
+		//display(form1)
 	}
 }
 
@@ -37,6 +37,15 @@ function part2(){
 $("form").submit(function(e) {
     e.preventDefault();
 });
+
+//return
+$("#return").on("click", function(){
+	$( '#content2').hide()
+	$( '#content1').show()
+	$( '.part2').css("background-color", "#ddd")
+	$( '.part2').css("color", "black")
+	$( '.part1').css("background-color", "#ccc")
+	$( '.part1').css("color", "#4287f5")})
  
 
 //part 2 validation
@@ -54,10 +63,9 @@ function isValid2(){
 }
 
 var info = []
-
-function display(form) {
-	data = form.serializeArray()
-	console.log(data)
-	info += (JSON.stringify(data))
+function display() {
+	var data = $( "#form1" ).serialize()
+	var other_data = $('#form2').serialize()
+	info += data.replace("&", " ") + " " +other_data.replace("&", " ");
 	$("#info").html(info)
 }
