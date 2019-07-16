@@ -68,4 +68,5 @@ function display() {
 	var other_data = $('#form2').serialize()
 	info += data.replace("&", " ") + " " +other_data.replace("&", " ");
 	$("#info").html(info)
+	$("#submit").attr("disabled", "true")
 }
