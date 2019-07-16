@@ -18,6 +18,7 @@ form1.validate();
 function isValid(){
 	if (form1.valid() === true){
 		part2()
+		display(form1)
 	}
 }
 
@@ -44,12 +45,19 @@ var form2 = $('#form2')
 
 form2.validate();
 
-//somehow, data isnt a function, and it doesnt find data ==> need to debug ==> however, still got a lot of work done, which is nice
 
 
 function isValid2(){
 	if (form2.valid() === true){
-		//do something
-		console.log("yipee")
+		display(form2);
 	}
+}
+
+var info = []
+
+function display(form) {
+	data = form.serializeArray()
+	console.log(data)
+	info += (JSON.stringify(data))
+	$("#info").html(info)
 }
